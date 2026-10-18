@@ -1,0 +1,213 @@
+Human-Computer Interaction
+Perancangan UI/UX Web Katalog Sabuh Mas Catering (Gianyar)
+Dosen Pengampu:
+Putu Gede Surya Cipta Nugraha, S.Kom., M.Kom.
+Disusun oleh (Kelompok 1):
+1.	Ni Made Eva Rianti	2513231009
+2.	Ni Wayan Putri Anggita Dewi	2513231012
+3.	I Kadek Dwi Jayendra Puja	2513231018
+PROGRAM STUDI INFORMATIKA
+FAKULTAS SAINS DAN TEKNOLOGI
+UNIVERSITAS HINDU NEGERI I GUSTI BAGUS
+SUGRIWA DENPASAR
+2026
+1. Judul Proyek dan Deskripsi Masalah
+Judul proyek
+Perancangan Sistem Web Katalog Digital dan Portal Verifikasi Legalitas Usaha Sabuh Mas Catering Gianyar.
+Deskripsi Masalah
+Sabuh Mas Catering adalah usaha katering di Gianyar, Bali, yang melayani instansi pemerintah (B2G) melalui e-katalog Inaproc dan masyarakat umum (B2C) melalui WhatsApp. Saat ini informasi menu, paket harga, dan dokumen legalitas (NPWP dan rujukan Inaproc) disampaikan secara manual lewat WhatsApp. Berdasarkan wawancara dengan pemilik usaha, cara ini menimbulkan tiga masalah utama:
+Dokumen NPWP dan foto menu harus dikirim berulang kali secara manual sehingga menyita waktu.
+Balasan chat sering lambat ketika dapur sedang sibuk.
+Calon pembeli B2G ragu apabila bukti legalitas usaha tidak dipublikasikan secara transparan pada satu platform.
+Tujuan sistem
+Menyediakan web katalog digital yang responsif, memuat profil dan katalog menu beserta harga, menampilkan bukti legalitas (NPWP) yang dapat diverifikasi dalam satu klik, serta menyediakan tautan langsung untuk pemesanan resmi, yaitu ke portal Inaproc untuk B2G dan ke WhatsApp admin untuk B2C.
+2. Identifikasi Calon Pengguna Utama
+Sistem melibatkan tiga pihak: Admin/Pemilik usaha, Pelanggan instansi pemerintah (B2G), dan Pelanggan umum (B2C). Pengguna utama dalam laporan ini adalah Admin/Pemilik usaha (Bu Agung) sebagai persona, dan pelanggan B2G sebagai pengguna yang perspektif dan perjalanannya dipetakan pada empathy map, scenario, dan journey. Alasannya:
+Data wawancara nyata berasal dari pemilik usaha, sehingga persona dapat disusun dari temuan, bukan sekadar asumsi.
+Menurut pemilik, sekitar 96–97% pelanggan berasal dari instansi pemerintah (Pemda, Puskesmas, kampus), sehingga kebutuhan B2G merupakan fokus utama sistem.
+Pemilik adalah pengelola katalog dan pihak yang langsung menghadapi pertanyaan pelanggan tentang menu, harga, dan legalitas.
+Pengguna sekunder: Pelanggan umum (B2C), sekitar 3–4% dari pelanggan, yang memesan lewat WhatsApp. Kebutuhan pelanggan B2G dan B2C dicatat berdasarkan penuturan pemilik usaha dan diberi label dugaan awal yang perlu divalidasi.
+3. Sumber Informasi dan Ringkasan Proses
+Item
+Keterangan
+Narasumber
+Anak Agung Mas Yulientari (Bu Agung), pendiri/pemilik Sabuh Mas Catering (identitas lengkap pada SKPL Bab 4.1)
+Pewawancara
+Ni Wayan Putri Anggita Dewi, Ni Made Eva Rianti, I Kadek Dwi Jayendra Puja
+Waktu
+Kamis, 1 Oktober 2026, pukul 18.30 WITA
+Media
+Tatap muka di lokasi Sabuh Mas Catering, Gianyar
+Metode
+Wawancara langsung (8 pertanyaan) dan observasi
+Bukti
+Dokumentasi foto wawancara (SKPL Gambar 4.1)
+Ringkasan temuan wawancara:
+Usaha berdiri sekitar 2018/2019 dan resmi berizin serta ber-NPWP pada April 2019. Awalnya melayani proposal ke Puskesmas dan kampus serta acara keluarga (20–30 kotak).
+Usaha berkembang pesat setelah terdaftar di e-katalog pemerintah (Inaproc) dan kini memakai tenaga freelance sesuai jumlah pesanan.
+Pesanan instansi wajib masuk lewat Inaproc, sedangkan pelanggan perorangan dilayani lewat WhatsApp.
+Sekitar 96–97% pelanggan berasal dari instansi pemerintah dan 3–4% dari masyarakat umum.
+Harga paket di Inaproc sudah terdaftar dan dapat dinegosiasikan di aplikasi. Harga pemesanan via WhatsApp mengikuti kesepakatan menu pesanan.
+Kendala utama adalah manajemen waktu masak, pengiriman, dan konsumsi (makanan harus tahan hingga 8 jam), terutama saat pesanan melonjak. Pesanan dikonfirmasi ulang pada H-1.
+Pesanan umumnya diantar langsung ke lokasi acara.
+Rekap penjualan dilakukan per bulan untuk SPT Tahunan. Penjualan instansi terekam di Inaproc, sedangkan penjualan masyarakat dicatat manual.
+Keterangan label pada laporan ini:
+Temuan = berasal langsung dari wawancara atau observasi.
+Dugaan = interpretasi tim yang belum divalidasi dan perlu dikonfirmasi pada tahap berikutnya.
+4. User Persona
+Persona Utama: “Bu Agung” – Pemilik dan Admin Sabuh Mas Catering
+Aspek
+Deskripsi
+Nama
+Anak Agung Mas Yulientari (Bu Agung)
+Peran
+Pendiri, pemilik, sekaligus admin harian Sabuh Mas Catering
+Lokasi usaha
+Gianyar, Bali
+Latar belakang usaha
+Berdiri sekitar 2018/2019, resmi berizin dan ber-NPWP sejak April 2019, berkembang setelah terdaftar di Inaproc [Temuan]
+Usia
+Tidak dicantumkan (belum dikonfirmasi)
+Perangkat
+Smartphone untuk WhatsApp dan laptop untuk rekap harian [Dugaan]
+Literasi digital
+Menengah: terbiasa memakai WhatsApp dan aplikasi e-katalog Inaproc, tetapi bukan pengembang web [Dugaan]
+Kutipan
+“Katalog dan legalitas harus praktis, agar pelanggan B2C mudah memesan dan instansi B2G percaya.” (parafrase)
+Tujuan (Goals)
+Menunjukkan izin usaha dan NPWP resmi dengan mudah
+Menyajikan menu dan harga secara terstruktur
+Menyediakan jalur pemesanan jelas: Inaproc untuk B2G dan WhatsApp untuk B2C
+Meningkatkan kepercayaan pelanggan
+Kebutuhan (Needs)
+Web yang cepat dan responsif di ponsel
+Verifikasi legalitas dalam satu klik
+Galeri menu dan testimoni
+Navigasi yang sederhana
+Perilaku (Behaviors)
+Melayani pesanan instansi lewat Inaproc dan pesanan perorangan lewat WhatsApp [Temuan]
+Mengonfirmasi ulang rincian pesanan pada H-1 [Temuan]
+Merekap penjualan per bulan untuk SPT Tahunan; penjualan masyarakat dicatat manual [Temuan]
+Membalas WhatsApp lewat ponsel di sela kesibukan dapur [Dugaan]
+Hambatan / Frustrasi (Pain Points)
+Harus mengirim NPWP dan foto menu berulang kali secara manual
+Balasan chat lambat saat dapur sibuk
+Calon pembeli B2G ragu bila legalitas tidak terlihat transparan
+Foto menu sulit dicari kembali saat dibutuhkan
+Manajemen waktu produksi dan pengiriman saat pesanan melonjak (di luar cakupan sistem) [Temuan]
+Persona sekunder (singkat, belum divalidasi): Staf pengadaan instansi (B2G) yang memakai ponsel untuk memeriksa NPWP, daftar harga, dan tautan Inaproc sebelum memesan [Dugaan].
+Visualisasi persona tersedia pada Lampiran (Gambar 1).
+5. Empathy Map
+Empathy map disusun untuk pelanggan instansi (B2G) terkait aktivitas mencari vendor katering dan memastikan legalitasnya. Isinya bersumber dari penuturan pemilik usaha tentang pertanyaan dan perilaku pelanggan, bukan wawancara langsung dengan pelanggan, sehingga diberi label dugaan.
+Kuadran
+Isi
+Says (Mengatakan)
+“Apakah ada izin NPWP resmi?” (parafrase)
+“Berapa harga paket Nasi Kotak dan PMT?” (parafrase)
+“Mana link Inaproc-nya?” (parafrase)
+Thinks (Memikirkan)
+Legalitas vendor harus lengkap dan resmi agar Laporan Pertanggungjawaban instansi aman.
+Semoga respons admin cepat dan pesanan H-1 terkonfirmasi dengan jelas.
+Does (Melakukan)
+Mencari vendor lewat Google di ponsel, lalu chat admin untuk meminta foto menu dan NPWP.
+Mengeklik tautan WhatsApp atau portal Inaproc.
+Feels (Merasakan)
+Cemas jika respons lambat dan legalitas masih meragukan.
+Frustrasi karena harus meminta berkas manual berulang kali.
+Lega saat informasi transparan dan mudah diakses.
+Pain
+Calon pembeli B2G khawatir/ragu jika sertifikasi legalitas vendor kurang jelas.
+Repot meminta dan mengirim berkas NPWP serta foto menu secara manual berulang kali lewat WhatsApp.
+Gain
+Akses informasi katalog menu dan sertifikat NPWP resmi secara terpusat dan transparan.
+Hemat waktu verifikasi sehingga penyusunan laporan pertanggungjawaban (LPJ) instansi lebih cepat, aman, dan tenang.
+Seluruh isi tabel berstatus [Dugaan] karena belum divalidasi langsung kepada staf pengadaan instansi. Visualisasi empathy map tersedia pada Lampiran (Gambar 2).
+6. User Scenario
+Tokoh: Staf pengadaan sebuah instansi di Gianyar (pelanggan B2G) dan Bu Agung sebagai admin Sabuh Mas Catering.
+Situasi: Instansi membutuhkan paket PMT Balita untuk sebuah kegiatan dan harus melampirkan bukti NPWP vendor pada laporan pertanggungjawaban.
+Tujuan: Memastikan legalitas vendor, melihat daftar paket dan harga, lalu memesan secara resmi dengan cepat dan aman.
+Cerita singkat:
+Staf pengadaan membuka website Sabuh Mas Catering lewat ponsel. Ia memeriksa verifikasi legalitas resmi, melihat daftar harga paket PMT Balita, lalu mengeklik tombol “Pesan via Inaproc” untuk melakukan transaksi resmi. Dengan begitu ia tidak perlu lagi meminta berkas NPWP dan foto menu lewat chat, dan Bu Agung tidak perlu mengirimnya berulang kali. Pesanan kemudian dikonfirmasi pada H-1 acara.
+Langkah / aktivitas utama: membuka web, memeriksa legalitas NPWP, menjelajahi katalog dan harga, memilih jalur pesan (Inaproc/WhatsApp), menerima konfirmasi H-1.
+Kendala yang mungkin terjadi:
+Koneksi internet lemah saat membuka web atau katalog (SKPL 2.4 dan 2.5).
+Tautan e-katalog Inaproc tidak aktif atau berubah, padahal sistem bergantung padanya (SKPL 2.5).
+Dokumen legalitas yang ditampilkan belum diperbarui oleh admin [Dugaan].
+Pelanggan umum (B2C) tidak menemukan template pesan WhatsApp yang sesuai kebutuhan acara [Dugaan].
+Visualisasi scenario tersedia pada Lampiran (Gambar 3).
+7. User Journey Map
+Persona: Pelanggan instansi (B2G) dan Bu Agung sebagai admin | Tujuan: Legalitas dan harga mudah diverifikasi, lalu pesanan resmi terkonfirmasi dengan jelas.
+Journey di bawah menampilkan lima tahap perjalanan pengguna beserta aktivitas, touchpoint, emosi, hambatan, dan peluang perbaikan melalui sistem yang diusulkan.
+Aspek
+Discovery
+Exploration
+Evaluation
+Action
+Post-Purchase
+Aktivitas
+Mengakses website dari smartphone
+Membuka katalog menu dan rincian harga
+Memeriksa bukti NPWP resmi dan galeri
+Mengeklik tombol “Pesan via Inaproc / WA”
+Menerima konfirmasi H-1 acara
+Touchpoint
+Landing page
+Halaman katalog
+Halaman legalitas
+Tombol CTA direct link
+Chat WhatsApp / notifikasi
+Emosi
+Penasaran
+Tertarik
+Ragu / memastikan
+Yakin dan puas
+Lega dan tenang
+Pain point [Dugaan]
+Web lambat dibuka di ponsel
+Harga dan menu sulit dibandingkan
+Bukti legalitas tidak terlihat jelas
+Tautan pemesanan tidak jelas
+Menunggu konfirmasi tanpa kabar
+Peluang
+Optimasi kecepatan web (<3 detik) dan UI responsif
+Kategori menu dan filter harga yang transparan
+Badge verifikasi NPWP dan unduh berkas 1 klik
+Direct link pemesanan resmi (Inaproc/WA)
+Notifikasi rekap dan konfirmasi otomatis H-1
+Visualisasi user journey map tersedia pada Lampiran (Gambar 4).
+8. Keterkaitan dengan SKPL dan Arah Desain UI/UX
+Temuan UCD
+Kebutuhan pada SKPL
+Arah desain UI/UX
+Calon pembeli B2G ragu karena legalitas tidak transparan
+KF-02, KF-07, KF-08
+Halaman legalitas dengan badge NPWP, unduh berkas 1 klik, dan panduan pemesanan via Inaproc
+NPWP dan foto menu dikirim manual berulang
+KF-03, KF-04
+Katalog kartu yang rapi dengan kategori Nasi Kotak, Prasmanan, PMT Balita, dan Snack Box beserta harga
+Pelanggan B2C memesan lewat WhatsApp, B2G lewat Inaproc
+KF-05, KF-06, KF-07
+Tombol CTA direct link yang jelas dan template pesan WhatsApp otomatis
+Pelanggan perlu bukti kualitas layanan
+KF-09, KF-10
+Galeri foto acara dan testimoni pelanggan
+Pengguna mengakses dari ponsel
+KNF-01, KNF-02
+Tampilan mobile-first (mulai 360px) dengan waktu muat kurang dari 3 detik
+9. Catatan Validasi
+Persona, empathy map, scenario, dan journey memakai data dari satu narasumber, sehingga bagian berlabel [Dugaan] perlu divalidasi kembali kepada pemilik dan, terutama, kepada staf pengadaan instansi.
+Langkah validasi yang disarankan: wawancara singkat dengan 3–5 staf pengadaan instansi dan pelanggan umum, observasi cara pemilik menangani pesanan, dan uji coba prototipe (usability test) dengan pemilik.
+Sumber Data dan Ringkasan Proses Wawancara / Observasi
+Nama Narasumber	: Anak Agung Mas Yulientari (Bu Agung)
+Peran / Jabatan	: Pendiri / Pemilik Sabuh Mas Catering
+Waktu	: Kamis, 1 Oktober 2026, pukul 18.30 WITA
+Metode	: Tatap muka (wawancara langsung di lokasi usaha)
+Pewawancara	: Kelompok 1 (Ni Wayan Putri Anggita Dewi, Ni Made Eva Rianti, I Kadek Dwi Jayendra Puja)
+Lampiran: Visualisasi Artefak UX
+Gambar 1. User Persona – Admin dan Pemilik Usaha
+Lampiran: Visualisasi Artefak UX
+Gambar 2. Empathy Map – Perspektif Pengguna
+Lampiran: Visualisasi Artefak UX
+Gambar 3. User Scenario – Skenario Penggunaan Web
+Lampiran: Visualisasi Artefak UX
+Gambar 4. User Journey Map – Peta Perjalanan Pengguna

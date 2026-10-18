@@ -1,0 +1,355 @@
+LEMBAR TUGAS 2
+Analisis Kebutuhan Pengguna dan Penyusunan SKPL
+Item
+Keterangan
+Mata Kuliah
+Rekayasa Perangkat Lunak — Semester 3
+Program Studi
+Informatika, UHN I Gusti Bagus Sugriwa Denpasar
+Sifat Tugas
+Kelompok (maks. 3 orang)
+Bentuk Keluaran
+Dokumen SKPL (file ini, dilengkapi) + bukti wawancara
+Batas Waktu
+27 September 2026, Pukul 23.59 PM
+Deskripsi Tugas
+Setiap kelompok memilih satu sistem/aplikasi sederhana (mis. sistem peminjaman ruang, pencatatan inventaris, antrean layanan, pendaftaran kegiatan, kasir warung, web profile, dll). Lakukan wawancara kepada minimal satu calon pengguna nyata untuk menggali kebutuhan, lalu susun hasilnya ke dalam dokumen SKPL menggunakan template ini.
+Langkah Pengerjaan
+Tentukan sistem. Pilih sistem sederhana dan tetapkan lingkupnya agar dapat diselesaikan dalam satu sprint nanti.
+Identifikasi calon pengguna. Tentukan siapa yang akan diwawancarai dan mengapa ia relevan.
+Susun pertanyaan wawancara. Minimal 8 pertanyaan yang menggali kebutuhan (bukan menawarkan solusi).
+Lakukan wawancara. Dokumentasikan: catat jawaban dan kumpulkan bukti (foto/tangkapan layar/rekaman/notulen).
+Analisis kebutuhan. Ubah hasil wawancara menjadi kebutuhan fungsional (min. 10) dan nonfungsional (min. 5) yang terukur, lengkap dengan prioritas MoSCoW.
+Tulis user story. Pilih minimal 3 kebutuhan terpenting, tulis sebagai user story + kriteria penerimaan (Given–When–Then).
+Lengkapi dokumen. Isi seluruh bagian template SKPL ini, termasuk Bab IV (bukti wawancara).
+Kriteria Penilaian (Rubrik Ringkas)
+Aspek
+Bobot
+Kelengkapan dan kejelasan dokumen SKPL
+25%
+Kualitas kebutuhan (terukur, tidak ambigu, berprioritas)
+30%
+Kualitas dan kedalaman wawancara serta bukti
+25%
+Ketertelusuran (kebutuhan sesuai hasil wawancara)
+10%
+Kerapian, tata tulis, dan referensi
+10%
+Keterkaitan dengan Tugas 3: Hasil Tugas 2 ini akan dilanjutkan pada Tugas 3, yaitu simulasi satu Sprint dalam Scrum. Product Backlog akan disusun dari kebutuhan dan user story yang Anda buat di sini, sehingga kualitas Tugas 2 sangat menentukan kemudahan Tugas 3.
+SPESIFIKASI KEBUTUHAN PERANGKAT LUNAK
+(SKPL / Software Requirements Specification)
+NAMA SISTEM:
+Sistem Informasi Katalog Digital dan Web Profil Sabuh Mas Catering
+Disusun oleh Kelompok: 1
+1.Ni Made Eva Rianti (NIM: 2513231009)
+2.Ni Wayan Putri Anggita Dewi (NIM: 2513231012)
+3.I Kadek Dwi Jayendra Puja    (NIM:2513231018)
+Mata Kuliah: Rekayasa Perangkat Lunak
+Program Studi Informatika
+UHN I Gusti Bagus Sugriwa Denpasar
+Tahun Akademik 2026/2027 - Semester 3
+LEMBAR IDENTITAS DAN RIWAYAT REVISI
+A. Identitas Dokumen
+Item
+Keterangan
+Nomor Dokumen
+SKPL-KLP01-2026 
+Nama Sistem
+Sistem Informasi Katalog Digital Sabuh Mas Catering
+Versi Dokumen
+1.0 
+Tanggal
+2 Oktober 2026
+Status
+ Final 
+B. Riwayat Revisi
+ Petunjuk: Catat setiap perubahan dokumen. Ini melatih pengelolaan perubahan kebutuhan (change management) yang akan penting saat masuk sprint Scrum di Tugas 3.
+Versi
+Tanggal
+Deskripsi Perubahan
+Penulis
+1.0
+2 Oktober 2026
+Penyusunan awal dokumen SKPL
+Kelompok 1
+DAFTAR ISI
+Deskripsi Tugas1
+Langkah Pengerjaan1
+Kriteria Penilaian (Rubrik Ringkas)1
+LEMBAR IDENTITAS DAN RIWAYAT REVISI4
+A. Identitas Dokumen4
+B. Riwayat Revisi4
+BAB I  PENDAHULUAN7
+1.1  Tujuan Penulisan Dokumen7
+1.2  Lingkup Masalah (Scope)7
+1.3  Definisi, Akronim, dan Singkatan7
+1.4  Referensi8
+1.5  Sistematika / Ikhtisar Dokumen8
+BAB II  DESKRIPSI UMUM PERANGKAT LUNAK9
+2.1  Deskripsi Umum Sistem9
+2.2  Fungsi Utama Produk (Ringkasan)9
+2.3  Karakteristik Pengguna9
+2.4  Batasan (Constraints)10
+2.5  Asumsi dan Ketergantungan10
+2.6  Lingkungan Operasi11
+BAB III  DESKRIPSI KEBUTUHAN11
+3.1  Kebutuhan Fungsional (KF)11
+3.2  Kebutuhan Nonfungsional (KNF)12
+3.3  User Story dan Kriteria Penerimaan13
+BAB IV  HASIL DAN BUKTI WAWANCARA14
+4.1  Identitas Narasumber14
+4.2  Daftar Pertanyaan dan Ringkasan Jawaban14
+4.3  Bukti Wawancara16
+BAB V  PENUTUP17
+5.1  Ringkasan17
+Berdasarkan hasil analisis kebutuhan yang telah disusun, Sabuh Mas Catering memerlukan sebuah Sistem Informasi Katalog Digital dan Web Profil Usaha. Sistem ini dikembangkan untuk mempublikasikan profil bisnis, informasi legalitas (izin usaha & NPWP), serta katalog paket menu (Nasi Kotak, Prasmanan, PMT Balita, dan Snack Box) secara interaktif. Sistem ini memfasilitasi dua jenis pelanggan utama: pelanggan perorangan (B2C) melalui integrasi pemesanan WhatsApp, serta pelanggan instansi pemerintah (B2G) melalui pengalihan dan panduan ke e-katalog portal Inaproc. Dari analisis ini, telah dihasilkan 10 Kebutuhan Fungsional (KF), 5 Kebutuhan Nonfungsional (KNF) terukur, serta 3 user story utama sebagai landasan pengembangan17
+5.2  Rencana Tindak Lanjut ke Tugas 317
+BAB I  PENDAHULUAN
+1.1  Tujuan Penulisan Dokumen
+ Petunjuk: Jelaskan untuk apa dokumen SKPL ini dibuat dan siapa yang akan menggunakannya (mis. sebagai acuan pengembangan dan pengujian sistem).
+Dokumen Spesifikasi Kebutuhan Perangkat Lunak (SKPL) ini disusun untuk kebutuhan fungsional dan non-fungsional dalam pengembangan Sistem Informasi Katalog Digital Sabuh Mas Catering. Dokumen ini digunakan sebagai acuan utama bagi tim pengembang, penguji, dan pemilik usaha dalam proses  pengembangan, verifikasi, serta pengujian sistem.…
+1.2  Lingkup Masalah (Scope)
+ Petunjuk: Sebutkan sistem apa yang dibangun, masalah apa yang diselesaikan, apa yang termasuk (in-scope) dan tidak termasuk (out-of-scope). Ingat: sistem harus sederhana.
+Sistem yang dibangun adalah aplikasi web profil usaha dan katalog digital interaktif bagi Sabuh Mas Catering.Fitur dan Masalah yang Diselesaikan (In-Scope):
+Menampilkan profil usaha, latar belakang, alamat lokasi, serta bukti legalitas izin usaha dan NPWP resmi.
+Menyajikan katalog pilihan menu dan paket makanan/snack box beserta rincian deskripsi dan estimasi harganya.
+Memfasilitasi pemesanan pelanggan umum (B2C) melalui integrasi tombol Quick Order langsung ke WhatsApp Admin.
+Memfasilitasi alur pemesanan instansi pemerintah (B2G) melalui penyediaan tautan dan panduan resmi ke portal e-katalog Inaproc.
+Menampilkan galeri foto portofolio dokumentasi pelayanan acara dan ulasan/testimoni dari pelanggan.
+Fitur yang Tidak Termasuk (Out-of-Scope):
+Sistem tidak menyediakan transaksi pemrosesan pembayaran digital internal (internal payment gateway) di dalam website. Transaksi B2G tetap diproses via Inaproc dan B2C via negosiasi langsung di WhatsApp.
+Sistem tidak mengelola inventaris bahan baku dapur dan manajemen stok harian secara internal.
+1.3  Definisi, Akronim, dan Singkatan
+Istilah / Singkatan
+Penjelasan
+SKPL 
+Spesifikasi Kebutuhan Perangkat Lunak, dokumen resmi yang memuat seluruh spesifikasi kebutuhan sistem yang dibangun.
+Inaproc
+Indonesia National Procurement Portal adalah Portal pengadaan E-Katalog resmi Pemerintah untuk transaksi pengadaan barang dan jasa.
+B2G
+Business to Government, model transaksi bisnis antara penyedia/vendor dengan instansi atau lembaga pemerintah.
+B2C
+Business to Consumer, model transaksi bisnis langsung dari penyedia kepada konsumen perorangan atau masyarakat umum.
+PMT
+Pemberian Makanan Tambahan, paket menu makanan sehat khusus balita dan program pelayanan kesehatan.
+1.4  Referensi
+ Petunjuk: Cantumkan sumber yang dipakai: buku, pedoman akademik, dokumen lain. Boleh menyertakan referensi materi kuliah.
+Pressman, R. S., dan Maxim, B. R. (2020). Software Engineering: A Practitioner's Approach (9th ed.). McGraw-Hill Education.
+Transkrip Hasil Wawancara dengan Pemilik Usaha Sabuh Mas Catering (Anak Agung Mas Yulientari), Oktober 2026.
+Pertemuan II - Software Engineering and Model [Slide Bahan Ajar Mata Kuliah Rekayasa Perangkat Lunak]  …
+1.5  Sistematika / Ikhtisar Dokumen
+Dokumen SKPL ini disusun dengan struktur sistematika sebagai berikut:
+BAB I Pendahuluan: Menjelaskan tujuan penulisan dokumen, lingkup masalah sistem (scope), definisi atau singkatan, referensi, dan sistematika dokumen.
+BAB II Deskripsi Umum Perangkat Lunak: Menjelaskan perspektif umum sistem, fungsi utama produk, karakteristik pengguna (persona), batasan sistem, serta asumsi kebergantungan.
+BAB III Deskripsi Kebutuhan: Menyajikan rincian spesifikasi kebutuhan fungsional dan kebutuhan non-fungsional sistem secara terstruktur.
+…
+BAB II  DESKRIPSI UMUM PERANGKAT LUNAK
+2.1  Deskripsi Umum Sistem
+ Petunjuk: Gambarkan sistem secara umum: apa fungsinya, bagaimana cara kerjanya secara garis besar, dan manfaatnya bagi pengguna. Boleh menyertakan gambaran arsitektur/konteks sederhana.
+Sistem Informasi Katalog Digital Sabuh Mas Catering merupakan aplikasi berbasis web yang berfungsi sebagai media promosi digital, pusat informasi profil bisnis, serta katalog produk interaktif. Sistem ini dirancang untuk mempermudah calon pelanggan dalam mempelajari variasi paket makanan, mengecek legalitas usaha, serta mengakses alur pemesanan yang sesuai dengan kategorinya. Untuk pelanggan instansi pemerintah (B2G), sistem menyediakan tautan dan panduan langsung menuju e-katalog resmi di portal Inaproc. Sementara untuk pelanggan umum/perorangan (B2C), sistem mengintegrasikan tombol Quick Order yang terhubung langsung dengan WhatsApp Admin…
+…
+2.2  Fungsi Utama Produk (Ringkasan)
+ Petunjuk: Daftar singkat fungsi-fungsi utama sistem dalam bentuk poin. Rincinya nanti diuraikan di Bab III.
+Pengelolaan Profil dan Legalitas Usaha: Menampilkan latar belakang bisnis, alamat lokasi, serta kelengkapan dokumen legalitas izin usaha dan NPWP resmi. 
+Penyajian Katalog Menu dan Paket: Menyajikan daftar produk makanan dan snack box yang dikelompokkan berdasarkan kategori beserta rincian deskripsi dan estimasi harganya. 
+Integrasi Pemesanan B2C (WhatsApp): Memfasilitasi pemesanan pelanggan perorangan melalui tombol direct link ke nomor WhatsApp Admin dengan template pesan otomatis. 
+Integrasi Pemesanan B2G (Inaproc): Menyediakan tautan rujukan dan informasi alur transaksi resmi khusus instansi pemerintah via portal e-katalog Inaproc. 
+Penyajian Galeri dan Testimoni: Menampilkan dokumentasi portofolio acara yang pernah dilayani beserta ulasan/testimoni pelanggan.
+…
+…
+2.3  Karakteristik Pengguna
+ Petunjuk: Siapa saja yang akan memakai sistem. Ini adalah hasil identifikasi stakeholder/pengguna dari wawancara.
+Jenis Pengguna
+Tugas / Peran dalam Sistem
+Hak Akses
+Pemilik usaha 
+Mengelola dan memperbarui informasi profil usaha,daftar katalog menu,galeri foto dokumentasi,serta tautan kontak
+Akses Penuh (Administrator)
+Pelanggan Instansi Pemerintah (B2G)
+Melihat profil usaha, bukti legalitas, katalog menu, serta mengakses link rujukan pemesanan ke portal Inaproc
+Akses Pengunjung (Read-Only + Redirection)
+Pelanggan Umum / Perorangan (B2C)
+Melihat daftar menu, estimasi harga paket, galeri acara, testimoni, serta melakukan pemesanan via tombol WhatsApp
+Akses Pengunjung (Read-Only + Redirection)
+2.4  Batasan (Constraints)
+ Petunjuk: Aturan/keterbatasan yang sudah 'dikunci' dari luar: teknologi wajib, kebijakan, waktu, perangkat, dsb. Bukan fitur, melainkan kondisi yang membatasi pengembangan.
+Sistem berjalan secara berbasis web (web-based) sehingga membutuhkan jaringan internet aktif untuk diakses. 
+Sistem tidak memiliki modul transaksi pembayaran digital internal (internal payment gateway). 
+Seluruh alur pembayaran transaksi B2G diselesaikan di portal e-katalog Inaproc, sedangkan transaksi B2C disepakati melalui komunikasi WhatsApp. 
+…
+2.5  Asumsi dan Ketergantungan
+ Petunjuk: Hal yang dianggap benar saat sistem dibangun (asumsi) dan hal di luar kendali tim yang memengaruhi sistem (ketergantungan), mis. bergantung pada koneksi internet kampus.
+Asumsi: Pengguna (baik instansi maupun perorangan) memiliki perangkat (HP/Desktop) yang terhubung ke internet dan menggunakan peramban web (browser) modern. 
+Kebergantungan: Ketersediaan dan kelancaran fungsi integrasi tombol pemesanan sangat bergantung pada keaktifan API WhatsApp serta keaktifan tautan e-katalog resmi Sabuh Mas Catering di portal Inaproc
+…
+2.6  Lingkungan Operasi
+ Petunjuk: Perangkat keras, perangkat lunak, dan platform tempat sistem dijalankan (mis. browser, sistem operasi, basis data).
+Sisi Pengguna (Client Side): Perangkat komputer, laptop, atau smartphone dengan sistem operasi (Windows, Android, iOS, macOS) yang menjalankan web browser (Google Chrome, Mozilla Firefox, Safari, Microsoft Edge). 
+Sisi Server (Server Side): Web Server yang mendukung penyajian aplikasi web dengan koneksi basis data yang aman. 
+BAB III  DESKRIPSI KEBUTUHAN
+3.1  Kebutuhan Fungsional (KF)
+ Petunjuk: Apa yang HARUS DILAKUKAN sistem. Gunakan kalimat 'Sistem harus/dapat …'. Beri ID unik (KF-01, KF-02, …), prioritas MoSCoW (Must/Should/Could/Won't), dan sumber (stakeholder/narasumber asal kebutuhan). Minimal 10 kebutuhan fungsional.
+ID
+Nama Kebutuhan
+Deskripsi (Sistem harus/dapat …)
+Prioritas
+Sumber
+KF-01
+Informasi Profil Usaha
+.Sistem dapat menampilkan profil bisnis, latar belakang sejarah, dan alamat lokasi Sabuh Mas Catering
+Must
+Buk Agung (Owner)
+KF-02
+Informasi Legalitas dan NPWP
+Sistem dapat menampilkan dokumen bukti sertifikasi izin usaha resmi dan NPWP perusahaan
+Must
+Bu Agung dan Pelanggan B2G
+KF-03
+Pengelompokan Katalog Menu 
+Sistem dapat menampilkan katalog menu berdasarkan kategori (Nasi Kotak, Prasmanan, PMT Balita, dan Snack Box)
+Must
+Bu Agung dan
+Pelanggan 
+KF-04
+Rincian Paket dan Harga
+Sistem dapat menampilkan rincian isi lauk/menu beserta kisaran harga untuk setiap pilihan paket
+Must
+Pelanggan B2C dan B2G
+KF-05
+Tombol Pemesanan WahtsApp
+Sistem dapat menyediakan tombol Quick Order yang mengarahkan pelanggan umum (B2C) langsung ke WhatsApp Admin
+Must
+Pelanggan B2C
+KF-06
+Template Pesan Otomatis WA 
+Sistem dapat menyertakan template pesan pemesanan otomatis saat pengguna menekan tombol pemesanan WhatsApp
+Should
+Bu Agung (Owner)
+KF-07
+Integrasi Link Portal Inaproc
+Sistem dapat menyediakan tombol dan tautan langsung menuju e-katalog resmi Sabuh Mas Catering di portal Inaproc.
+Must
+Pelanggan B2G (Instansi)
+KF-08
+Panduan Pemesanan Instans
+Sistem dapat menampilkan halaman/petunjuk tata cara alur pemesanan khusus instansi pemerintah via Inaproc
+Should
+Pelanggan B2G (Instansi)
+KF-09
+Panduan Pemesanan Instans
+Testimoni Pelanggan
+Sistem dapat menampilkan galeri foto dokumentasi hasil pelayanan catering di berbagai acara
+Should
+Bu Agung (Owner)
+KF-10
+Testimoni Pelanggan
+Sistem dapat menampilkan daftar ulasan/testimoni positif dari pelanggan instansi maupun umum
+Should
+Bu Agung (Owner)
+3.2  Kebutuhan Nonfungsional (KNF)
+ Petunjuk: Kualitas/kendala sistem: kinerja, keamanan, kegunaan, keandalan, portabilitas, pemeliharaan. HARUS TERUKUR — hindari kata kabur seperti 'cepat' atau 'aman'. Minimal 5 kebutuhan.
+ID
+Kategori
+Kebutuhan (pernyataan terukur)
+Prioritas
+KNF-01
+Kinerja (Performance)
+Waktu pemuatan (load time) halaman utama dan katalog produk harus kurang dari 3 detik pada koneksi internet standar (10 Mbps)
+Must
+KNF-02
+Kegunaan (Usability)
+Antarmuka web harus responsif (mobile-friendly) dan dapat tampil rapi tanpa horizontal scroll pada resolusi layar smartphone (minimal 360px) hingga desktop
+Must
+KNF-03
+Keandalan (Reliability
+Aplikasi web harus memiliki tingkat ketersediaan sistem (uptime) minimal 99% dalam kurun waktu 24/7
+Must
+KNF-04
+Portabilitas (Compatibility)
+Web dapat dibuka dan berfungsi 100% normal pada 4 peramban utama (Google Chrome, Mozilla Firefox, Safari, Microsoft Edge)
+Must
+KNF-05
+Keamanan (Security)
+Seluruh komunikasi lalu lintas data pada aplikasi web harus menggunakan enkripsi SSL/TLS
+Must
+3.3  User Story dan Kriteria Penerimaan
+ Petunjuk: Pilih minimal 3 kebutuhan fungsional terpenting, tulis ulang sebagai user story + kriteria penerimaan (Given–When–Then). Bagian ini menjadi bahan Product Backlog untuk Tugas 3 (sprint Scrum).
+User Story #1
+Sebagai Pelanggan (B2C/B2G), saya ingin melihat daftar katalog menu beserta  rincian isi paket dan harganya, agar saya dapat memilih jenis catering yang sesuai dengan anggaran dan kebutuhan acara.
+Kriteria Penerimaan:
+Given pengguna berada di halaman utama aplikasi web, 
+When pengguna mengklik tombol atau menu "Katalog Produk", 
+Then sistem menampilkan daftar kategori paket menu (Nasi Kotak, Prasmanan, PMT Balita, Snack Box) lengkap dengan foto, deskripsi lauk, dan kisaran harga.
+User Story #2
+Sebagai Pelanggan Umum (B2C), saya ingin menekan tombol pemesanan WhatsApp, agar saya dapat terhubung langsung dengan Admin untuk berkonsultasi dan melakukan pemesanan.Kriteria Penerimaan:
+Kriteria Penerimaan:
+Given pengguna sedang membuka halaman katalog atau rincian paket menu, 
+When pengguna menekan tombol "Pesan via WhatsApp", 
+Then sistem mengarahkan (redirect) pengguna ke aplikasi/web WhatsApp Admin Sabuh Mas Catering dengan template pesan pemesanan otomatis
+User Story #3
+Sebagai Panitia Pengadaan Instansi (B2G), saya ingin mengakses tombol dan tautan rujukan portal Inaproc, agar instansi saya dapat melakukan proses transaksi pengadaan resmi secara sah
+Kriteria Penerimaan:
+Given pengguna berada di halaman utama atau halaman khusus informasi instansi, 
+When pengguna menekan tombol "Pesan via Inaproc", 
+Then sistem membuka tab baru pada browser yang mengarahkan pengguna secara tepat ke halaman e-katalog resmi Sabuh Mas Catering di portal Inaproc. 
+BAB IV  HASIL DAN BUKTI WAWANCARA
+ Petunjuk: Bab ini WAJIB diisi. Kualitas kebutuhan di Bab III harus dapat ditelusuri kembali ke hasil wawancara di sini.
+4.1  Identitas Narasumber
+Item
+Keterangan
+Nama Narasumber
+Anak Agung Mas Yulientari (Bu Agung)
+Peran / Jabatan
+Pendiri / Pemilik Usaha Sabuh Mas Catering
+Hari / Tanggal
+Kamis,1 Oktober 2026
+Waktu
+18.30 Wita
+Tempat / Media
+Tatap muka (Lokasi Sabuh Mas Catering)
+Pewawancara
+Ni Wayan Putri Anggita Dewi 2513231012
+Ni Made Eva Rianti 2513231009I Kadek Dwi Jayendra Puja 2513231018
+4.2  Daftar Pertanyaan dan Ringkasan Jawaban
+ Petunjuk: Tuliskan minimal 8 pertanyaan wawancara beserta ringkasan jawaban narasumber. Pertanyaan sebaiknya menggali kebutuhan, bukan solusi.
+No
+Pertanyaan
+Ringkasan Jawaban Narasumber
+1
+Story: Buk, bisa diceritain awal mulanya usaha katering ini sampai bisa bertahan sampai sekarang?
+Berdiri sekitar 2018/2019 dan resmi berizin serta ber-NPWP pada April 2019. Awalnya membawa proposal ke Puskesmas & kampus, serta melayani acara keluarga (20–30 kotak). Bisnis makin berkembang pesat setelah terdaftar di e-katalog pemerintah (Inaproc) dan kini mempekerjakan banyak tenaga freelance sesuai pesanan.
+2
+Kendala: Selama menjalankan usaha ini, biasanya kendalanya apa aja, Buk? 
+Kendala utama adalah manajemen waktu proses masak, pengiriman, dan waktu konsumsi agar makanan tidak cepat basi (harus dipastikan tahan hingga 8 jam). Kendala operasional juga muncul di dapur produksi dan logistik saat pesanan melonjak
+3
+Pesanan: Kalau ada yang mau pesan, biasanya mereka pesan lewat mana, Buk? WhatsApp, datang langsung, atau gimana?
+Pesanan instansi/kantor pemerintah wajib masuk lewat sistem e-katalog resmi (Inaproc). Sedangkan pesanan dari pelanggan perorangan/masyarakat umum dilayani via WhatsApp
+4
+Pesanan Ramai: Kalau lagi rame pesanan, biasanya yang paling bikin repot bagian apanya, Buk?
+Bagian paling krusial dan merepotkan adalah sektor produksi dan logistik pengiriman. Untuk mengantisipasinya, pihak catering selalu melakukan konfirmasi ulang rincian pesanan pada H-1
+5
+Orang yang Memesan: Biasanya yang pesan itu siapa aja, Buk? Orang kantor, buat acara, atau pelanggan biasa? 
+Mayoritas pelanggan (96–97%) berasal dari instansi/kantor pemerintah (Pemda, Puskesmas, kampus). Sisanya (3–4%) merupakan masyarakat umum untuk hajatan atau acara keluarga.
+6
+Harga Pesanan: Kalau nentuin harga pesanan biasanya gimana, Buk? Ada paket tertentu atau dihitung sesuai pesanannya?
+Di Inaproc sudah ada daftar paket pricing terdaftar yang bisa dinegosiasikan langsung di aplikasi. Untuk pemesanan via WhatsApp, harga disesuaikan berdasarkan kesepakatan custom request menu pemesan
+7
+Transportasi: Pesanannya biasanya diambil sendiri atau diantar, Buk? Kalau diantar, biasanya ngatur jadwalnya gimana?
+Dominan diantar langsung ke lokasi acara sebagai bagian dari standar layanan (service). Pesanan hanya diambil sendiri oleh pemesan jika jumlahnya sangat sedikit atau atas permintaan khusus
+8
+Rekap Penjualan/Pesanan: Kalau mau lihat rekap penjualan atau pesanan, biasanya Ibu nyatetnya di mana? Terus biasanya yang paling perlu Ibu lihat apa aja?
+Rekapitulasi dilakukan per bulan untuk laporan SPT Tahunan/pajak. Penjualan ke instansi sudah terekam otomatis di Inaproc beserta potongan PPh/PPN, sedangkan penjualan masyarakat dicatat manual selisihnya untuk memantau akumulasi omset tahunan
+4.3  Bukti Wawancara
+ Petunjuk: Lampirkan bukti nyata: foto saat wawancara, tangkapan layar pertemuan daring, hasil rekaman/notulen bertanda tangan, atau formulir wawancara. Sisipkan gambar pada ruang di bawah ini dan beri keterangan.
+                                                                                                                 
+Gambar 4.1 Dokumentasi Kegiatan Wawancara Lapangan dengan Pemilik Sabuh Mas Catering (Anak Agung Mas Yulientari) 
+BAB V  PENUTUP
+5.1  Ringkasan
+Berdasarkan hasil analisis kebutuhan yang telah disusun, Sabuh Mas Catering memerlukan sebuah Sistem Informasi Katalog Digital dan Web Profil Usaha. Sistem ini dikembangkan untuk mempublikasikan profil bisnis, informasi legalitas (izin usaha & NPWP), serta katalog paket menu (Nasi Kotak, Prasmanan, PMT Balita, dan Snack Box) secara interaktif. Sistem ini memfasilitasi dua jenis pelanggan utama: pelanggan perorangan (B2C) melalui integrasi pemesanan WhatsApp, serta pelanggan instansi pemerintah (B2G) melalui pengalihan dan panduan ke e-katalog portal Inaproc. Dari analisis ini, telah dihasilkan 10 Kebutuhan Fungsional (KF), 5 Kebutuhan Nonfungsional (KNF) terukur, serta 3 user story utama sebagai landasan pengembangan
+5.2  Rencana Tindak Lanjut ke Tugas 3
+Catatan penting: Dokumen SKPL ini akan menjadi bahan dasar untuk Tugas 3, yaitu simulasi satu Sprint dalam Scrum. Kebutuhan fungsional dan user story pada Bab III akan diubah menjadi Product Backlog, lalu sebagian dipilih ke dalam Sprint Backlog untuk dikerjakan dalam satu iterasi. Karena itu, susunlah kebutuhan dengan jelas, terukur, dan berprioritas agar mudah dilanjutkan nanti.
+Pada  Sprint 1 mendatang, kebutuhan yang akan dikerjakan lebih dulu (Sprint Backlog) adalah fitur-fitur berprioritas Must, yaitu: 
+KF-01 & KF-02: Halaman Profil Usaha dan Informasi Legalitas/NPWP. 
+KF-03 & KF-04: Pengelompokan Katalog Menu dan Rincian Paket/Harga. 
+KF-05 & KF-07: Integrasi Tombol Pemesanan WhatsApp (B2C) dan Tautan Portal Inaproc (B2G). 
+Alasan Pemilihan: Fitur-fitur tersebut diprioritaskan pada Sprint 1 karena merupakan fungsi Minimum Viable Product (MVP) utama yang menjadi solusi atas kebutuhan mendasar calon pelanggan (B2C & B2G) untuk memperoleh informasi produk dan mengakses alur pemesanan resmi. Kebutuhan pendukung berprioritas Should (seperti galeri foto dokumentasi dan testimoni) akan dikerjakan pada Sprint berikutnya.
