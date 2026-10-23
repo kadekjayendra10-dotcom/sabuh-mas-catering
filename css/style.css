@@ -231,16 +231,20 @@ button {
   width: 22px;
   height: 2px;
   background-color: var(--text-main);
-  margin: 5px 0;
+  margin: 4px 0;
   transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
 .menu-toggle[aria-expanded="true"] span:first-child {
-  transform: translateY(3.5px) rotate(45deg);
+  transform: translateY(6px) rotate(45deg);
+}
+
+.menu-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
 }
 
 .menu-toggle[aria-expanded="true"] span:last-child {
-  transform: translateY(-3.5px) rotate(-45deg);
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 /* --------------------------------------------------------------------------
@@ -650,6 +654,27 @@ button {
   gap: 14px;
 }
 
+/* Lokasi di footer dibuat menyatu dengan bidang footer, bukan kartu kontras. */
+.footer-location {
+  background-color: transparent;
+  border: 0;
+  margin-top: 24px;
+  padding: 0;
+}
+
+.footer-location .location-title {
+  color: var(--text-footer-muted);
+}
+
+.footer-location .location-city,
+.footer-location .location-text {
+  color: var(--text-footer);
+}
+
+.footer-location .location-note {
+  color: var(--text-footer-muted);
+}
+
 .location-header {
   display: inline-flex;
   align-items: center;
@@ -722,8 +747,7 @@ button {
 }
 
 .footer-brand-wrap {
-  padding-bottom: 34px;
-  border-bottom: 1px solid rgba(223, 212, 195, 0.14);
+  padding-bottom: 0;
 }
 
 .footer-brand .brand-title {
@@ -855,6 +879,11 @@ button {
   .pemesanan-location {
     margin-top: 28px;
     padding: 20px;
+  }
+
+  .footer-location {
+    margin-top: 24px;
+    padding: 0;
   }
 
   .location-details {
