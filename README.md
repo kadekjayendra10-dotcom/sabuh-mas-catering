@@ -13,7 +13,6 @@ Buka `index.html` di browser. Untuk alur kerja lokal yang konsisten, jalankan se
 - `js/script.js` — navigasi seluler dan tahun footer.
 - `assets/images/produk/` — tempat foto produk asli yang sudah disetujui; lihat README di dalam folder.
 - `assets/icons/` — tempat ikon khusus bila diperlukan.
-- `ai-workspace/` — catatan kerja Codex dan Antigravity.
 - `docs/` — design brief, backlog, dan sprint log.
 
 Konten menu, paket, harga, kontak, jangkauan layanan, serta profil usaha harus dikonfirmasi sebelum dipublikasikan sebagai informasi faktual.
