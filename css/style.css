@@ -901,3 +901,28 @@ button {
     animation: none !important;
   }
 }
+
+/* Single-page view routing: only one content view is visible at a time. */
+.view-panel { display: none; min-height: 58vh; }
+.view-panel.is-active { display: block; animation: view-enter .22s ease both; }
+@keyframes view-enter { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Catalog-only lightbox. The source images remain in their catalog cards. */
+.catalog-lightbox { position: fixed; inset: 0; z-index: 50; display: grid; padding: 24px; place-items: center; background: rgba(42, 32, 23, .88); }
+.catalog-lightbox[hidden] { display: none; }
+.catalog-lightbox figure { position: relative; display: grid; grid-template-columns: 44px minmax(0, 900px) 44px; align-items: center; gap: 14px; max-width: min(1060px, 100%); margin: 0; }
+.catalog-lightbox img { grid-column: 2; max-width: 100%; max-height: 78vh; object-fit: contain; border: 1px solid rgba(255,255,255,.35); }
+.catalog-lightbox figcaption { grid-column: 2; padding-top: 12px; color: #fff; text-align: center; }
+.catalog-lightbox button { color: #fff; border: 1px solid rgba(255,255,255,.6); background: transparent; cursor: pointer; }
+.catalog-lightbox button:hover { background: var(--terracotta); border-color: var(--terracotta); }
+.catalog-lightbox .lightbox-close { position: absolute; top: -44px; right: 0; width: 36px; height: 36px; }
+.catalog-lightbox .lightbox-prev, .catalog-lightbox .lightbox-next { width: 40px; height: 40px; }
+.catalog-lightbox .lightbox-prev { grid-column: 1; grid-row: 1; }
+.catalog-lightbox .lightbox-next { grid-column: 3; grid-row: 1; }
+.catalog-section .card-media img { cursor: zoom-in; }
+body.lightbox-open { overflow: hidden; }
+@media (max-width: 680px) {
+  .catalog-lightbox { padding: 18px; }
+  .catalog-lightbox figure { grid-template-columns: 38px minmax(0, 1fr) 38px; gap: 8px; }
+  .catalog-lightbox .lightbox-prev, .catalog-lightbox .lightbox-next { width: 34px; height: 34px; }
+}

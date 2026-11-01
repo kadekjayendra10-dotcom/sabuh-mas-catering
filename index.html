@@ -14,9 +14,9 @@
 <body>
   <header class="site-header">
     <div class="header-container">
-      <a class="brand" href="#atas" aria-label="Sabuh Mas Catering, kembali ke atas">
+      <a class="brand" href="#beranda" data-route="beranda" aria-label="Sabuh Mas Catering, kembali ke Beranda">
         <span class="brand-title">Sabuh Mas</span>
-        <span class="brand-sub">CATERING · GIANYAR</span>
+      <span class="brand-sub">CATERING · GIANYAR</span>
       </a>
 
       <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Buka navigasi">
@@ -26,17 +26,18 @@
       </button>
 
       <nav id="main-nav" class="main-nav" aria-label="Navigasi utama">
-        <a href="#profil">Profil</a>
-        <a href="#tentang">Tentang Usaha</a>
-        <a href="#katalog">Katalog</a>
-        <a href="#pemesanan" class="nav-highlight">Pemesanan</a>
+        <a href="#beranda" data-route="beranda">Beranda</a>
+        <a href="#profil" data-route="profil">Profil Usaha</a>
+        <a href="#katalog" data-route="katalog">Katalog Layanan</a>
+        <a href="#pemesanan" data-route="pemesanan" class="nav-highlight">Pemesanan</a>
       </nav>
     </div>
   </header>
 
   <main id="atas">
+    <section class="view-panel is-active" data-view="beranda" id="view-beranda" aria-labelledby="hero-title">
     <!-- HERO SECTION / PROFIL -->
-    <section class="hero" id="profil" aria-labelledby="hero-title">
+    <section class="hero" aria-labelledby="hero-title">
       <div class="hero-inner">
         <div class="hero-content">
           <p class="section-label"><span class="label-bullet"></span> 01 — Profil · Jasa Catering · Gianyar, Bali</p>
@@ -61,8 +62,10 @@
         </aside>
       </div>
     </section>
+    </section>
 
     <!-- KATALOG SECTION -->
+    <section class="view-panel" data-view="katalog" id="view-katalog" aria-labelledby="katalog-title" hidden>
     <section class="section-container katalog-section" id="katalog" aria-labelledby="katalog-title">
       <div class="section-header">
         <div>
@@ -80,7 +83,7 @@
             <span class="card-tag">Porsi Personal</span>
           </div>
           <div class="card-media">
-            <img src="js/assets/images/produk/nasi%20kotak.jpeg" alt="Sajian Nasi Kotak Sabuh Mas Catering" loading="lazy" width="600" height="338">
+            <img data-gallery-image src="js/assets/images/produk/nasi%20kotak.jpeg" alt="Sajian Nasi Kotak Sabuh Mas Catering" loading="lazy" width="600" height="338">
           </div>
           <div class="card-body">
             <h3 class="card-title">Nasi Kotak</h3>
@@ -98,7 +101,7 @@
             <span class="card-tag">Sajian Bersama</span>
           </div>
           <div class="card-media">
-            <img src="js/assets/images/produk/prasmanan.jpeg" alt="Sajian Prasmanan Sabuh Mas Catering" loading="lazy" width="600" height="338">
+            <img data-gallery-image src="js/assets/images/produk/prasmanan.jpeg" alt="Sajian Prasmanan Sabuh Mas Catering" loading="lazy" width="600" height="338">
           </div>
           <div class="card-body">
             <h3 class="card-title">Prasmanan</h3>
@@ -116,7 +119,7 @@
             <span class="card-tag">Program Balita</span>
           </div>
           <div class="card-media">
-            <img src="js/assets/images/produk/pmt.jpeg" alt="Paket PMT Balita Sabuh Mas Catering" loading="lazy" width="600" height="338">
+            <img data-gallery-image src="js/assets/images/produk/pmt.jpeg" alt="Paket PMT Balita Sabuh Mas Catering" loading="lazy" width="600" height="338">
           </div>
           <div class="card-body">
             <h3 class="card-title">PMT Balita</h3>
@@ -134,7 +137,7 @@
             <span class="card-tag">Rehat Acara</span>
           </div>
           <div class="card-media">
-            <img src="js/assets/images/produk/snack%20box.jpeg" alt="Sajian Snack Box Sabuh Mas Catering" loading="lazy" width="600" height="338">
+            <img data-gallery-image src="js/assets/images/produk/snack%20box.jpeg" alt="Sajian Snack Box Sabuh Mas Catering" loading="lazy" width="600" height="338">
           </div>
           <div class="card-body">
             <h3 class="card-title">Snack Box</h3>
@@ -148,8 +151,10 @@
 
       <p class="katalog-note">Detail menu dan harga dapat dikonfirmasi langsung kepada pemilik usaha saat pemesanan.</p>
     </section>
+    </section>
 
-    <!-- TENTANG SECTION -->
+    <!-- PROFIL USAHA SECTION -->
+    <section class="view-panel" data-view="profil" id="view-profil" aria-labelledby="tentang-title" hidden>
     <section class="tentang-section" id="tentang" aria-labelledby="tentang-title">
       <div class="tentang-inner">
         <div class="tentang-sidebar">
@@ -178,8 +183,10 @@
         </div>
       </div>
     </section>
+    </section>
 
     <!-- PEMESANAN & KONTAK SECTION -->
+    <section class="view-panel" data-view="pemesanan" id="view-pemesanan" aria-labelledby="pemesanan-title" hidden>
     <section class="section-container pemesanan-section" id="pemesanan" aria-labelledby="pemesanan-title">
       <div class="section-header">
         <div>
@@ -224,12 +231,23 @@
       </div>
 
     </section>
+    </section>
   </main>
+
+  <div class="lightbox catalog-lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-label="Pratinjau foto katalog">
+    <figure>
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Tutup pratinjau">×</button>
+      <button class="lightbox-prev" type="button" data-lightbox-prev aria-label="Foto katalog sebelumnya">←</button>
+      <img data-lightbox-image src="" alt="">
+      <button class="lightbox-next" type="button" data-lightbox-next aria-label="Foto katalog berikutnya">→</button>
+      <figcaption data-lightbox-caption></figcaption>
+    </figure>
+  </div>
 
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-brand-wrap">
-        <a class="brand footer-brand" href="#atas" aria-label="Sabuh Mas Catering, kembali ke atas">
+        <a class="brand footer-brand" href="#beranda" data-route="beranda" aria-label="Sabuh Mas Catering, kembali ke Beranda">
           <span class="brand-title">Sabuh Mas</span>
           <span class="brand-sub">CATERING · GIANYAR</span>
         </a>
