@@ -3,7 +3,7 @@
 ## Sprint 0 — struktur demo
 
 - Disiapkan halaman demo dengan komposisi editorial dan palet krem, cokelat, terracotta, serta hijau zaitun.
-- Navigasi seluler dan ilustrasi sajian dibuat tanpa framework CSS.
+- Navigasi seluler dibuat tanpa framework CSS.
 - CSS dan JavaScript dipisah ke folder `css/` dan `js/`.
 - Dokumentasi proyek, design brief, backlog, dan catatan ruang kerja ditambahkan.
 - Informasi usaha yang belum terverifikasi tetap ditandai; belum ada foto produk asli.
@@ -25,3 +25,9 @@
 - Informasi publik Tentang menyebut izin usaha atas nama pribadi berdasarkan wawancara April 2019; informasi NPWP hanya untuk catatan internal.
 - Nomor NPWP, foto kartu, dan dokumen perpajakan tidak ditampilkan di website.
 - Label profil yang dikonfirmasi menjelaskan sumber informasi usaha, bukan sertifikasi atau verifikasi instansi.
+
+## Revisi audit fidelity
+
+- Ukuran font kecil dinaikkan agar teks antarmuka lebih mudah dibaca tanpa mengubah karakter visual.
+- Copy hero, kartu katalog, dan footer diselaraskan dengan fakta usaha yang tersedia pada design brief.
+- Dokumentasi Sprint 0 diperbaiki agar tidak menyebut ilustrasi yang tidak ada.
