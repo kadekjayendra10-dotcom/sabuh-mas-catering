@@ -824,6 +824,24 @@ button {
 }
 
 @media (max-width: 680px) {
+  .site-footer {
+    padding-top: 40px;
+    padding-bottom: 28px;
+  }
+
+  .footer-brand-wrap {
+    padding-bottom: 16px;
+  }
+
+  .footer-location {
+    margin-top: 0;
+    padding-top: 16px;
+  }
+
+  .footer-bottom {
+    padding-top: 20px;
+  }
+
   .card-media {
     aspect-ratio: auto;
     height: clamp(220px, 70vw, 320px);
@@ -883,8 +901,8 @@ button {
   }
 
   .footer-location {
-    margin-top: 24px;
-    padding: 0;
+    margin-top: 0;
+    padding: 16px 0 0;
   }
 
   .location-details {
