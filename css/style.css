@@ -658,8 +658,9 @@ button {
 .footer-location {
   background-color: transparent;
   border: 0;
-  margin-top: 24px;
-  padding: 0;
+  margin-top: 0;
+  padding: 24px 0 0;
+  border-top: 1px solid rgba(240, 234, 225, 0.18);
 }
 
 .footer-location .location-title {
@@ -747,7 +748,7 @@ button {
 }
 
 .footer-brand-wrap {
-  padding-bottom: 0;
+  padding-bottom: 28px;
 }
 
 .footer-brand .brand-title {
